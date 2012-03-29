@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets"
+        xmlns:rim="http://www.blackberry.com/ns/widgets"
+        version="2.0.0.0">
+
+  <name> OpenSourceBB.com</name>
+
+  <description>
+    A simple RSS reader for OpenSourceBB.com
+  </description>
+  <rim:orientation mode="auto"/>
+  <rim:loadingScreen backgroundImage="background.png"
+                     foregroundImage="foreground.gif"
+                     onLocalPageLoad="true">
+  <rim:transitionEffect type="zoomIn"/>
+  </rim:loadingScreen>
+		
+  <rim:category name="games"/>	
+
+  <rim:permissions>
+    <rim:permit>access_shared</rim:permit>
+    <rim:permit>read_geolocation</rim:permit>
+    <rim:permit>use_camera</rim:permit>  
+  </rim:permissions>
+
+  <icon src="icons/example.png"/>
+
+  <content src="index.html"/>
+
+  <feature id="blackberry.ui.dialog"/>
+  <access uri="http://www.somedomain.com" subdomains="true">
+    <feature id="blackberry.app.event"/>
+    <feature id="blackberry.invoke"/>
+  </access>
+
+</widget>
